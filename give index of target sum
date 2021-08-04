@@ -1,0 +1,13 @@
+def check(a,t):
+    for i in range(len(a)):
+        for j in range(i+1,len(a)):
+            if(a[i]+a[j]==t):
+                return [i,j]
+
+
+
+if __name__ == '__main__':
+    arr1=[1,2,3,5,8]
+    target=4
+    print(check(arr1,target))
+    
